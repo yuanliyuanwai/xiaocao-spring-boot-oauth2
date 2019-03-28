@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test For DataU</title>
+    <script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script>
+        window.onload = function() {
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:7001/getUserInfo",
+                dataType: "text",
+                success: function (msg) {
+                    $("#userinfo").html(msg);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<h1>模拟豆瓣的用户个人页面</h1>
+    <div class="phone">
+        <div id="userinfo"></div>
+        <div class="loginbutton"> 登录成功！！</div>
+    </div>
+</body>
+</html>

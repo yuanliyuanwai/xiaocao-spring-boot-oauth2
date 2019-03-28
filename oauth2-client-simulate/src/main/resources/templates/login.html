@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test For OAuth2.0 Client</title>
+    <script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script>
+        function leadToAuthorize() {
+            window.location.href= "http://localhost:7001/leadToAuthorize";
+        }
+    </script>
+</head>
+<body>
+<h1>模拟豆瓣的登陆界面</h1>
+    <div class="phone">
+        <div class="loginbutton">
+            <button value="使用QQ账号登录" onclick="leadToAuthorize()">使用QQ账号登录</button>
+        </div>
+    </div>
+</body>
+</html>
